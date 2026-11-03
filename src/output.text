@@ -20,3 +20,30 @@ Role: Java Developer
 Minimum Percentage: 65.0
 Maximum Backlogs: 0
 Required Graduation Year: 2026
+
+encapsulated and your eligibility logic is working in Main.java, the next module will build on this by introducing the remaining OOP pillars:
+
+Abstraction
+
+Inheritance
+
+Polymorphism
+
+kalithiswaran
+78
+0
+2026
+================================
+PLACEMENT ELIGIBILITY RESULT
+================================
+
+Candidate : kalithiswaran
+Company   : Infosys
+Role      : Java Developer
+
+Percentage      : PASS
+Backlogs        : PASS
+Graduation Year : PASS
+
+Final Result : ELIGIBLE
+================================
