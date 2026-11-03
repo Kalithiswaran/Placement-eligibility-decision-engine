@@ -1,3 +1,4 @@
+Candidate input &output :
 kalithiswaran
 99
 0
@@ -6,3 +7,16 @@ Candidate: kalithiswaran
 Percentage: 99.0
 Backlogs: 0
 Graduation Year: 2026
+
+job output & input :
+
+kalithiswaran
+78
+0
+2026
+Candidate: kalithiswaran
+Company: Infosys
+Role: Java Developer
+Minimum Percentage: 65.0
+Maximum Backlogs: 0
+Required Graduation Year: 2026
