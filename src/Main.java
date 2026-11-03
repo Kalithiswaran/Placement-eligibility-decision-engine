@@ -4,13 +4,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Read candidate input values
         String name = scanner.next();
         double percentage = scanner.nextDouble();
         int backlogs = scanner.nextInt();
         int graduationYear = scanner.nextInt();
 
-        // Create Candidate and Job objects
         Candidate candidate = new Candidate(
             name,
             percentage,
@@ -26,9 +24,10 @@ public class Main {
             2026
         );
 
-        // Evaluate eligibility rules
+        EligibilityRule percentageRule = new PercentageRule();
+
         boolean percentagePass =
-            candidate.getPercentage() >= job.getMinimumPercentage();
+            percentageRule.check(candidate, job);
 
         boolean backlogPass =
             candidate.getBacklogs() <= job.getMaximumBacklogs();
@@ -39,7 +38,6 @@ public class Main {
         boolean eligible =
             percentagePass && backlogPass && yearPass;
 
-        // Display placement result header
         System.out.println("================================");
         System.out.println("PLACEMENT ELIGIBILITY RESULT");
         System.out.println("================================");
@@ -50,7 +48,6 @@ public class Main {
         System.out.println("Role      : " + job.getRole());
         System.out.println();
 
-        // Display individual rule passes/fails
         if (percentagePass) {
             System.out.println("Percentage      : PASS");
         } else {
@@ -71,7 +68,6 @@ public class Main {
 
         System.out.println();
 
-        // Display final status
         if (eligible) {
             System.out.println("Final Result : ELIGIBLE");
         } else {
